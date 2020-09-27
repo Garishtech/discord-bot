@@ -3,7 +3,8 @@ module.exports = {
     description: 'Give someone a role',
     args: true,
     usage: '<user> <role>',
+    guildOnly: true,
     execute(message, args){
-        message.channel.send('Pong!');
+        
     },
 };

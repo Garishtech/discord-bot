@@ -12,8 +12,8 @@ module.exports = {
 
         if(!args.length){
             //Intro
-            data.push('=======List of Commands=======\n');
-            data.push(commands.map(command => command.name).join(', '));
+            data.push('=======List of Commands=======');
+            data.push(commands.map(command => command.name).join('\n'));
             data.push(`\nYou can send \`${prefix}help [command name]\` to get info on a specific command. `);
 
             return message.author.send(data, {split: true})

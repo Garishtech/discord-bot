@@ -18,14 +18,7 @@ client.once('ready', () => {
     console.log('Ready!');
 });
 
-
-/*
-//Simple message read form
-    else if (message.content === `${prefix}`){
-        message.channel.send('');
-    }
-*/
-
+//When a message is sent in the server
 client.on('message', message => {
 
     if(!message.content.startsWith(prefix) || message.author.bot) return;
